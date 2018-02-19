@@ -15,9 +15,11 @@
 @import "bootstrap";
 @import "rails_bootstrap_forms";
 @import "projects";
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
   background-color: #222;
   color: #fff;
   margin-top: 60px;
+  font-family: 'Montserrat', sans-serif;
 }
