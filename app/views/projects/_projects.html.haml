@@ -1,0 +1,9 @@
+.card.border-secondary.text-white.bg-transparent
+  .card-header.border-secondary
+    %h4.d-inline Projects
+    %a.btn.btn-sm.border-primary.float-right{href: new_project_path} Add
+  .card-body.bg-transparent
+    %ul.list-group.list-group-flush= render @projects
+-#   %h4.card-header Projects
+-#   .card-block
+-# = link_to 'New Project', new_project_path
