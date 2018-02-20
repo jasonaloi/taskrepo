@@ -1,9 +1,9 @@
--if current_project == project
+-if project == @project
   %a.list-group-item.bg-secondary.text-white.border-secondary.highlight{href: '#'}
-    %strong= project.name
+    %strong= bip_span project, :name
 -else
   %a.list-group-item.bg-transparent.border-secondary{href: project_path(project)}
-    = project.name
+    = bip_span project, :name
     -# %p= link_to 'Show', project
     -# %p= link_to 'Edit', edit_project_path(project)
     -# %p= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' }

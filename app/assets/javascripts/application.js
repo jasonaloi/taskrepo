@@ -20,4 +20,10 @@
 
 $(document).ready(function() {
   jQuery(".best_in_place").best_in_place();
+
+  $('.best_in_place').bind("ajax:success", function () {
+    bip_class = this.className.replace('best_in_place ','');
+    $('.'+bip_class).text($(this).text());
+  });
+
 });

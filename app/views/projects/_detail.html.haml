@@ -1,8 +1,8 @@
 .card.border-secondary.text-white.bg-transparent
   .card-header.border-secondary
-    %h4.d-inline= best_in_place @project, :name
+    %h4.d-inline= bip @project, :name
   .card-body
     %span.bg-transparent.border-secondary
-      = best_in_place @project, :description, as: :textarea
+      = bip @project, :description, as: :textarea
   .card-footer.text-center
     = link_to 'Delete', @project, method: :delete, data: { confirm: 'Are you sure?' }, class: 'd-inline btn btn-sm border-danger text-danger'
