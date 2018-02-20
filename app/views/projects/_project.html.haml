@@ -1,6 +1,6 @@
 -if current_project == project
   %a.list-group-item.bg-primary.text-white.border-secondary.highlight{href: '#'}
-    = project.name
+    %strong= project.name
 -else
   %a.list-group-item.bg-transparent.border-secondary{href: project_path(project)}
     = project.name
