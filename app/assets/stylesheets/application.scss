@@ -22,11 +22,18 @@ body {
   color: #fff;
   margin-top: 80px;
   font-family: 'Montserrat', sans-serif;
-}
 
-a.navbar-brand {
-    text-shadow: 0 0 10px #fff;
-    img {
-  
+  a {
+    color: #fff;
   }
+
+  a.list-group-item:hover {
+    background-color: #333 !important;
+  }
+
+
+  a.navbar-brand {
+      text-shadow: 0 0 10px #fff;
+  }
+
 }
