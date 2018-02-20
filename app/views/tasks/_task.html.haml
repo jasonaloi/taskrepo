@@ -1,4 +1,4 @@
 %li.list-group-item.bg-transparent.border-secondary.text-white
-  = link_to task.name, task_path(task)
+  = bip task, :name
   %a.d-inline.text-danger{href: task_path(task), data: { method: :delete, confirm: "Are you sure you want to delete #{task.name}?" }}
     %span.text-danger.float-right &times;
