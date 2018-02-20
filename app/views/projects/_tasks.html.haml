@@ -1,6 +1,6 @@
 .card.border-secondary.text-white.bg-transparent
   .card-header.border-secondary
     %h4.d-inline Tasks
-    %a.btn.btn-sm.border-primary.float-right{href: new_project_path} + New Task
+    %a.btn.btn-sm.border-primary.float-right{href: new_task_path(project: @project)} + New Task
   .list-group.list-group-flush
-    %a.list-group-item.bg-transparent.border-secondary{href: project_path(1)} Task One
+    = render @project.tasks

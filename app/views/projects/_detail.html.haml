@@ -5,4 +5,4 @@
     %span.bg-transparent.border-secondary
       = bip @project, :description, as: :textarea
   .card-footer.text-center
-    = link_to 'Delete', @project, method: :delete, data: { confirm: 'Are you sure?' }, class: 'd-inline btn btn-sm border-danger text-danger'
+    = link_to 'Delete', @project, method: :delete, data: { confirm: "Are you sure you want to delete #{@project.name}?" }, class: 'd-inline btn btn-sm border-danger text-danger'
