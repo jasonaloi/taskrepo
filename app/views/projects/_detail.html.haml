@@ -1,0 +1,8 @@
+.card.border-secondary.text-white.bg-transparent
+  .card-header.border-secondary
+    %h4.d-inline= @project.name
+  .card-body
+    %span.bg-transparent.border-secondary
+      =@project.description
+  .card-footer.text-center
+    = link_to 'Delete', @project, method: :delete, data: { confirm: 'Are you sure?' }, class: 'd-inline btn btn-sm border-danger text-danger'

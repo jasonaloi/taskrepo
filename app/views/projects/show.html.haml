@@ -1,9 +1,4 @@
-%p
-  %strong Name:
-  = @project.name
-%p
-  %strong Description:
-  = @project.description
-= link_to 'Edit', edit_project_path(@project)
-|
-= link_to 'Back', projects_path
+.card-columns
+  = render 'projects', current_project: @project
+  = render 'detail'
+  = render 'tasks'

@@ -4,12 +4,13 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.json
   def index
-    @projects = Project.all
+    redirect_to project_path Project.last
   end
 
   # GET /projects/1
   # GET /projects/1.json
   def show
+    @projects = Project.all
   end
 
   # GET /projects/new

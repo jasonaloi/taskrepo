@@ -23,3 +23,11 @@ body {
   margin-top: 80px;
   font-family: 'Montserrat', sans-serif;
 }
+
+a.navbar-brand {
+    text-shadow: 0 0 10px #fff;
+    img {
+    -webkit-filter: drop-shadow(0 0 5px #fff );
+    filter: drop-shadow(0 0 5px #fff);
+  }
+}
